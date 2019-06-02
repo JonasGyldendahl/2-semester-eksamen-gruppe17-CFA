@@ -303,3 +303,42 @@ main #kurser a, main #diagnose a, main #cfa a {
 main #kurser img {
     max-width: 100%;
 }
+
+/* ## Diagnose ## */
+main #colourContent {
+    color: #FFF;
+}
+
+main #colourContent #diagnose, main #colourContent #cfa {
+    padding-top: 1rem;
+}
+
+main #colourContent #diagnose h3, main #colourContent #cfa h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+main #diagnose {
+    background-color: #547DBD;
+    margin-top: -0.3rem;
+    padding-bottom: 1rem;
+}
+
+main #diagnose img {
+    width: 30%;
+    display: block;
+    margin: 2rem auto -1rem;
+}
+
+main #cfa img {
+    width: 80%;
+    display: block;
+    margin: 2rem auto 0;
+}
+
+/* ## Center for Autisme ## */
+main #cfa {
+    background-color: #65B230;
+    margin-top: -1rem;
+    padding-bottom: 0.5rem;
+}
