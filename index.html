@@ -1,133 +1,151 @@
 <!doctype html>
 <html lang="da">
 
-<head>
-    <title>Center for Autisme</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="robots" content="noindex"/>
-    <meta name="googlebot" content="noindex"/>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
-</head>
+    <head>
+        <!-- Titel, henvisning til stylesheet, ikke søgebar robots-->
+        <title>Center for Autisme</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex"/>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+    </head>
 
-<body>
-    <header>
-        <a href="index.html"><img src="images/headlogo.svg" alt="Center for Autisme logo" id="logoH"></a>
-        <nav class="main-nav">
-            <ul>
-                <li id="llR"><a href="#">vi tilbyder</a></li>
-                <li id="rL"><a href="#">til kommunen</a></li>
-                <li id="lR"><a href="forskningogudvikling.html">forskning &amp; udvikling</a></li>
-                <li><a href="#">om os</a></li>
-            </ul>
-        </nav>
+    <body>
 
-        <nav class="side-nav">
-            <a href="index.html"><p>center for <span>autisme</span></p></a>
-            <ul>
-                <li><a href="#"><img src="images/nyt.svg"></a></li>
-                <li><a href="#"><i class="far fa-calendar-alt"></i></a></li>
-                <span><li><a href="#"><i class="fas fa-bars fa-1x"></i></a></li></span>
-                <li><a href="#"><i class="fas fa-search"></i></a></li>
-                <li><a href="#"><i class="fas fa-phone-square"></i></a></li>
-            </ul>
-        </nav>
-    </header>
+        <header>
+            <!-- Top navigation, side navigation, logo -->
+            <a href="index.html" id="mobileLogo"><section>
+                <p>center for<br> <span>autisme</span></p>
+                <img src="images/headlogo.svg" alt="Center for Autisme logo">
+            </section></a>
+            <a href="index.html"><img src="images/headlogo.svg" alt="Center for Autisme logo" id="logoH"></a>
+            <nav class="main-nav">
+                <!-- Top navigation -->
+                <ul>
+                    <li id="llR"><a href="vitilbyder.html">vi tilbyder</a></li>
+                    <li id="rL"><a href="tilkommunen.html">til kommunen</a></li>
+                    <li id="lR"><a href="forskningogudvikling.html">forskning &amp; udvikling</a></li>
+                    <li id="rrL"><a href="omos.html">om os</a></li>
+                </ul>
+            </nav>
 
-    <main>
-        <section class="galleryContainer">
-            <div id="dotsContainer"></div>
-            <section class="slideShowContainer">
-                <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
-                <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
-                <section class="captionTextHolder"><p class="captionText slideTextFromTop"></p></section>
-                <article class="imageHolder">
-                    <img src="images/forsidebillede.png">
-                    <p class="captionText">Caption Text-01</p>
+            <nav class="side-nav">
+                <!-- Side navigation -->
+                <a href="index.html"><p>center for <span>autisme</span></p></a>
+                <ul>
+                    <li><a href="#"><img src="images/nyt.svg"></a></li>
+                    <li><a href="#"><i class="far fa-calendar-alt"></i></a></li>
+                    <span><li><a href="mobileMenu.html"><i class="fas fa-bars fa-1x"></i></a></li></span>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li><a href="kontakt.html"><i class="fas fa-phone-square"></i></a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+            <section class="galleryContainer">
+                <!-- Karrusel showcase -->
+                <div id="dotsContainer"></div>
+                <section class="slideShowContainer">
+                    <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+                    <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+                    <section class="captionTextHolder"><p class="captionText slideTextFromTop"></p></section>
+                    <article class="imageHolder">
+                        <img src="images/forsidebillede1.png">
+                        <p class="captionText">
+                            <span>Ring for a booke en rundvisning.</span> <br>
+                            Vores Særligt Tilrettelagte Ungdomsuddannelse <br>
+                            har løbende indtag af nye elevere.
+                        </p>
+                    </article>
+                    <article class="imageHolder">
+                        <img src="images/forsidebillede3.jpeg">
+                        <p class="captionText">Caption Text-02</p>
+                    </article>
+                    <article class="imageHolder">
+                        <img src="images/forsidebillede4.jpg">
+                        <p class="captionText">Caption Text-03</p>
+                    </article>
+                </section>
+            </section>
+
+            <section id="kurser">
+                <!-- Kurser section -->
+                <h1>Meld dig til et af vores kurser</h1>
+                <article id="contentK">
+                    <p>Vi afholder kurser med engagerede oplægsholdere, som har stor erfaring inden for autismeområdet. Vi formidler vores viden om autisme gennem inspirerende eksempler fra hverdagen, som medvirker til at skabe forståelse for, hvad det betyder at have en autismespektrumsforstyrrelse.</p>
+                    <p id="tlm">For at læse mere om vores kurser samt for tilmelding.</p>
+                    <a href="#">meld mig til</a>
+                    <p>Center for Autisme tilbyder skræddersyet undervisning, der er målrettet den organisation, der har bestilt forløbet.</p>
                 </article>
-                <article class="imageHolder">
-                    <img src="images/img_2.jpg">
-                    <p class="captionText">Caption Text-02</p>
-                </article>
-                <article class="imageHolder">
-                    <img src="images/img_3.jpg">
-                    <p class="captionText">Caption Text-03</p>
-                </article>
-                <article class="imageHolder">
-                    <img src="images/img_4.jpg">
-                    <p class="captionText">Caption Text-04</p>
+                <article>
+                    <img src="images/hand-pencil.jpeg" alt="Billede af blyant i hånden">
                 </article>
             </section>
-        </section>
 
-        <section id="kurser">
-            <h1>Meld dig til et af vores kurser</h1>
-            <article id="contentK">
-                <p>Vi afholder kurser med engagerede oplægsholdere, som har stor erfaring inden for autismeområdet. Vi formidler vores viden om autisme gennem inspirerende eksempler fra hverdagen, som medvirker til at skabe forståelse for, hvad det betyder at have en autismespektrumsforstyrrelse.</p>
-                <p id="tlm">For at læse mere om vores kurser samt for tilmelding.</p>
-                <a href="#">meld mig til</a>
-                <p>Center for Autisme tilbyder skræddersyet undervisning, der er målrettet den organisation, der har bestilt forløbet.</p>
-            </article>
-            <article>
-                <img src="images/hand-pencil.jpeg" alt="Billede af blyant i hånden">
-            </article>
-        </section>
+            <section id="colourContent">
+                <!-- Farvet indhold section -->
+                <article id="diagnose">
+                    <img src="images/family-room.svg" alt="Familie ikon">
+                    <h3>Når diagnosen er ny</h3>
+                    <p>Diagnosen autismespektrumforstyrrelse kan være uoverskueligt for både den berørte borger, såvel som for de pårørende.</p>
+                    <p>I dag stilles diagnosen autismespektrumforstyrrelse (ASF) ofte i 3- til 4-års-alderen, men allerede tidligere kan mistanken være opstået hos forældre såvel som hos fagfolk.</p>
+                    <p>Det kan være en svær tid for især forældrene, hvor usikkerhed om barnets problemer og angst for diagnosens konsekvenser kan være belastende.</p>
+                    <p>Vi har hos Center for Autisme derfor opstillet en overordnet guide og præsentation af forstyrrelsen som diagnose, samt rådgivning til det videre forløb.</p>
+                    <a href="#">læs guiden</a>
+                </article>
 
-        <section id="colourContent">
-            <article id="diagnose">
-                <img src="images/family-room.svg" alt="Familie ikon">
-                <h3>Når diagnosen er ny</h3>
-                <p>Diagnosen autismespektrumforstyrrelse kan være uoverskueligt for både den berørte borger, såvel som for de pårørende.</p>
-                <p>I dag stilles diagnosen autismespektrumforstyrrelse (ASF) ofte i 3- til 4-års-alderen, men allerede tidligere kan mistanken være opstået hos forældre såvel som hos fagfolk.</p>
-                <p>Det kan være en svær tid for især forældrene, hvor usikkerhed om barnets problemer og angst for diagnosens konsekvenser kan være belastende.</p>
-                <p>Vi har hos Center for Autisme derfor opstillet en overordnet guide og præsentation af forstyrrelsen som diagnose, samt rådgivning til det videre forløb.</p>
-                <a href="#">læs guiden</a>
-            </article>
-            <article id="cfa">
-                <img src="images/cfa.svg" alt="Center for Autisme bygning ikon">
+                <article id="cfa">
+                    <img src="images/cfa.svg" alt="Center for Autisme bygning ikon">
+                    <h3>Center for Autisme</h3>
+                    <p>Center for Autisme arbejder aktivt og dokumenteret for at udbygge samarbejdet med det offentlige og for at tilbyde borgere med neuro udviklingsforstyrrelser at udvikle nødvendige sociale og faglige færdigheder for at kunne indtage deres plads på arbejdsmarkedet.</p>
+                    <p>Vi koncentrerer os om at sætte det enkelte menneske i centrum.</p>
+                    <img src="" alt="">
+                    <p>Centerleder Marianne Tankred Luckow</p>
+                    <a href="#">vi tilbyder</a>
+                </article>
+            </section>
+
+        </main>
+
+        <footer>
+            <!-- Footer -->
+            <section id="nyhed">
+                <h3>Tilmeld dig vores nyhedsbrev</h3>
+                <p>Vores nyhedsbrev sendes ud løbende og fortæller om tiltag, tilbud og aktiviteter i Center for Autisme.</p>
+                <form>
+                    <input type="text" placeholder="Navn"><i class="fas fa-user"></i><br>
+                    <div></div>
+                    <input type="text" placeholder="Email"><i class="fas fa-envelope"></i><br>
+                    <div></div>
+                </form>
+                <a href="">tilmeld</a>
+            </section>
+            <div></div>
+            <section id="footerCfA">
                 <h3>Center for Autisme</h3>
-                <p>Center for Autisme arbejder aktivt og dokumenteret for at udbygge samarbejdet med det offentlige og for at tilbyde borgere med neuro udviklingsforstyrrelser at udvikle nødvendige sociale og faglige færdigheder for at kunne indtage deres plads på arbejdsmarkedet.</p>
-                <p>Vi koncentrerer os om at sætte det enkelte menneske i centrum.</p>
-                <img src="" alt="">
-                <p>Centerleder Marianne Tankred Luckow</p>
-                <a href="#">vi tilbyder</a>
-            </article>
-        </section>
-    </main>
+                <p>Herlev Hovedgade 199<br>
+                2730 Herlev</p>
+                <h3>TELEFONTID</h3>
+                <p>mandag-fredag</p>
+                <p>kl. 10.00 - 12.00<br>
+                &amp; 13.00 - 15.00</p>
+                <p>info@centerforautisme.dk</p>
 
-    <footer>
-        <section id="nyhed">
-            <h3>Tilmeld dig vores nyhedsbrev</h3>
-            <p>Vores nyhedsbrev sendes ud løbende og fortæller om tiltag, tilbud og aktiviteter i Center for Autisme.</p>
-            <form>
-                <input type="text" placeholder="Navn"><i class="fas fa-user"></i><br>
-                <div></div>
-                <input type="text" placeholder="Email"><i class="fas fa-envelope"></i><br>
-                <div></div>
-            </form>
-            <a href="">tilmeld</a>
-        </section>
-        <div></div>
-        <section id="footerCfA">
-            <h3>Center for Autisme</h3>
-            <p>Herlev Hovedgade 199<br>
-            2730 Herlev</p>            
-            <h3>TELEFONTID</h3>
-            <p>mandag-fredag</p>
-            <p>kl. 10.00 - 12.00<br>
-            &amp; 13.00 - 15.00</p>
-            <p>info@centerforautisme.dk</p>
-            
-            <article>
-                <a href="#"><i class="fab fa-facebook-f fFirst"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </article>
-        </section>
-    </footer>
-    <script src="myScript.js"></script>
-</body>
+                <article>
+                    <a href="#"><i class="fab fa-facebook-f fFirst"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </article>
+            </section>
+
+        </footer>
+
+        <script src="myScript.js"></script>
+
+    </body>
 
 </html>
