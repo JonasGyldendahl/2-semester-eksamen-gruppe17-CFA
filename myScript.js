@@ -32,12 +32,12 @@ function initGallery(){
         var dot=document.createElement("span");
         dot.classList.add("dots");
         dotsContainer.append(dot);
-        dot.setAttribute("onclick","moveSlide("+i+")");
+        dot.setAttribute("onclick","moveSlide("+i+")","clearInterval(timer)","setTimer()");
         dots.push(dot);
     }
     dots[slideIndex].classList.add("active");
 }
-initGallery();
+
 function plusSlides(n) {
     clearInterval(timer);
     setTimer();
@@ -82,4 +82,5 @@ function moveSlide(n){
     }
 
 }
+initGallery();
 setTimer();
