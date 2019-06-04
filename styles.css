@@ -10,6 +10,32 @@ header #logoH {
     display: none;
 }
 
+header #mobileLogo section {
+    display: grid;
+    grid-template-columns: 40% 20%;
+    position: absolute;
+    top: 1rem;
+    z-index: 2;
+    justify-content: center;
+    width: 100%;
+}
+
+header #mobileLogo p {
+    display: block;
+    color: #272727;
+    text-transform: uppercase;
+    font-family: Arial narrow;
+    font-size: 1.5rem
+}
+
+header #mobileLogo p span {
+    font-size: 2.2rem;
+}
+
+header #mobileLogo img {
+    width: 100%;
+}
+
 /* ## Main-nav styles ## */
 .main-nav {
     display: none;
@@ -157,8 +183,12 @@ header #logoH {
     width: 80%;
     background: #00000047;
     height: 30%;
-    line-height: 50px;
+    line-height: 30px;
     overflow: hidden;
+}
+
+.galleryContainer .slideShowContainer>.captionTextHolder span {
+    font-size: 1rem;
 }
 
 .galleryContainer .slideShowContainer>.captionTextHolder>.captionText{
@@ -441,23 +471,160 @@ footer #footerCfA article a .fFirst {
     margin-left: 0;
 }
 
-.forskningogudvikling {
+/* --- Mobile menu page --- */
+#menuH #mobileColourMenu {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin-top: 35%;
+}
+
+#menuH #mobileColourMenu a {
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#menuH #mobileColourMenu #vTB {
+    color: #537CBC;
+}
+
+#menuH #mobileColourMenu #tKG {
+    color: #65B230;
+}
+
+#menuH #mobileColourMenu #fUO {
+    color: #F3984C;
+}
+
+#menuH #mobileColourMenu #oOR {
+    color: #E42625;
+}
+
+#menuH #mobileColourMenu a li {
+    margin: 2rem auto;
+    padding-top: 2rem;
+    width: 70%;
+    border-top: 2px solid #272727;
+}
+
+#menuH #mobileColourMenu #vTB li {
+    border-top: none;
+}
+
+/* --- Vi Tilbyder underside --- */
+/* ## Coloured side menu undersider ## */
+.viT {
+    margin-top: 8rem;
+}
+
+.viT .colourMenu {
+    display: none;
+}
+
+.viT #faglighed p, .viT #muligheder p {
+    margin: 0 1rem 1rem;
+}
+
+.viT #muligheder h2 {
+    text-align: center;
+}
+
+.viT #muligheder img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+/* --- Forskning og Udvikling underside --- */
+.viT #forskningogudvikling {
 	display: grid;
 	grid-template-columns: 100%;
-	margin-top: 1rem;
-	margin-left: 1rem;
-	padding: 1rem;
 	grid-gap: 10px;
 }
 
-/* --- Media query start --- */
+.viT #forskningogudvikling p, .viT #omos p {
+    margin: 1rem;
+}
+
+.viT #forskningogudvikling h2 {
+    text-align: center;
+}
+
+.viT #forskningogudvikling article img {
+    width: 100%;
+}
+
+.viT #cL h2 {
+    display: grid;
+    text-align: center;
+}
+
+.viT #cL img {
+    display: block;
+    margin: 0 auto;
+}
+
+.viT #medarbejdere article {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.viT #medarbejdere article img {
+    display: block;
+    margin: 0 auto;
+}
+
+.viT #missionogvision {
+    margin: 1rem;
+}
+
+.viT #missionogvision h2 {
+    text-align: center;
+}
+
+.viT #kontakt p {
+    text-align: center;
+}
+
+.viT #kontakt #kInfo {
+    text-align: center;
+}
+
+.viT #kontakt #kInfo i {
+    margin-top: 2rem;
+    transform: scale(3);
+}
+
+.viT #kontakt #kMap h3 {
+    margin: 4rem 0 0;
+    text-align: end;
+}
+
+.viT #kontakt #kMap img {
+    width: 100%;
+}
+
+/* ######################################################################## */
+/* ------------------------- Media query start ---------------------------- */
+/* ######################################################################## */
+
 /* -Screens over 1100 pixels- */
 @media only screen and (min-width: 1100px) {
     /* ## moving elements ## */
     body {
         margin-left: 3%;
     }
-    
+
+    .viT {
+        margin-top: 0rem;
+    }
+
+    header #mobileLogo {
+        display: none;
+    }
+
     /* ## logo ## */
     header #logoH {
         display: block;
@@ -467,14 +634,14 @@ footer #footerCfA article a .fFirst {
         top: 0.5%;
         left: 48.5%;
     }
-    
+
     /* ## main navigation ## */
     header .main-nav {
         display: grid;
         background-color: #FBF8F8;
         height: 6rem;
     }
-    
+
     header .main-nav ul {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -482,23 +649,23 @@ footer #footerCfA article a .fFirst {
         text-align: center;
         padding: 0;
     }
-    
+
     header .main-nav ul li {
         margin: auto;
     }
-    
+
     header .main-nav ul #llR {
         margin-right: 4rem;
     }
-    
+
     header .main-nav ul #lR {
         margin-right: 0rem;
     }
-    
+
     header .main-nav ul #rL {
         margin-left: 5rem;
     }
-    
+
     header .main-nav ul li a {
         text-decoration: none;
         text-transform: uppercase;
@@ -507,7 +674,39 @@ footer #footerCfA article a .fFirst {
         color: #7C7B7B;
         font-size: 1.2rem;
     }
-    
+
+    header .main-nav ul #llR a:hover {
+        border-bottom: 2px solid #547DBD;
+    }
+
+    header .main-nav ul #rL a:hover {
+        border-bottom: 2px solid #65B230;
+    }
+
+    header .main-nav ul #lR a:hover {
+        border-bottom: 2px solid #F3984C;
+    }
+
+    header .main-nav ul #rrL a:hover {
+        border-bottom: 2px solid #E42625;
+    }
+
+    header .main-nav ul li #bCVT {
+        border-bottom: 2px solid #547DBD;
+    }
+
+    header .main-nav ul li #bCTK {
+        border-bottom: 2px solid #65B230;
+    }
+
+    header .main-nav ul li #bCFU {
+        border-bottom: 2px solid #F3984C;
+    }
+
+    header .main-nav ul li #bCOO {
+        border-bottom: 2px solid #E42625;
+    }
+
     /* ## side navigation ## */
     .side-nav {
         position: fixed;
@@ -516,7 +715,7 @@ footer #footerCfA article a .fFirst {
         height: 100%;
         background-color: #272727;
     }
-    
+
     .side-nav a {
         text-decoration: none;
     }
@@ -531,7 +730,7 @@ footer #footerCfA article a .fFirst {
         text-transform: uppercase;
         font-family: Arial Narrow;
     }
-    
+
     .side-nav p span {
         font-size: 1.5rem;
     }
@@ -568,13 +767,13 @@ footer #footerCfA article a .fFirst {
         color: #FFF;
         font-size: 1.5rem;
     }
-    
+
     /* --- Main content --- */
     /* ## section gallery ## */
     .galleryContainer {
         height: 97vh;
     }
-    
+
     .galleryContainer .slideShowContainer>.captionTextHolder{
         position: absolute;
         z-index: 1;
@@ -584,11 +783,11 @@ footer #footerCfA article a .fFirst {
         bottom: auto;
         width: 30%;
     }
-    
+
     .galleryContainer #dotsContainer {
         width: 96%;
     }
-    
+
     /* ## section kurser ## */
     main #kurser {
         display: grid;
@@ -596,71 +795,264 @@ footer #footerCfA article a .fFirst {
         margin-bottom: 4rem;
         margin-top: -4rem;
     }
-    
+
+    main #kurser a, main #diagnose a, main #cfa a {
+        width: 30%;
+    }
+
     main #kurser h1 {
         grid-area: 1 / 1 / span 1 / span 2;
         font-size: 6rem;
         margin: 1rem 0;
     }
-    
+
     main #kurser #contentK {
         grid-area: 2 / 2;
         margin: auto;
     }
-    
+
     main #kurser img {
         max-width: 85%;
         margin-left: 10%;
     }
-    
+
     /* ## section colourContent ## */
     main #colourContent {
         display: grid;
         grid-template-columns: 50% 50%;
     }
-    
+
     main #colourContent #diagnose, main #colourContent #cfa {
         height: 100vh;
         margin: 0;
         padding: 0;
     }
-    
+
     main #colourContent #cfa img {
         margin: 5rem auto;
     }
-    
+
     main #colourContent #diagnose p, main #colourContent #cfa p {
         margin: 1rem 5rem;
     }
-    
+
     /* --- Footer --- */
     footer {
         display: grid;
         grid-template-columns: 49.5% 1% 49.5%;
     }
-    
+
     footer #nyhed {
         padding: 0 9rem;
     }
-    
+
     footer #nyhed p {
         margin: 1rem 1rem 1rem 2rem;
     }
-    
+
     footer #nyhed input {
         transform: scale(1.5);
         width: 65%;
         margin: 1rem 1rem 0.8rem 6rem;
     }
-    
+
     footer #nyhed i {
         transform: scale(2);
     }
-    
+
     footer div {
         width: 0%;
         height: 100%;
         margin: 1rem auto;
         border: 2px solid #FFF;
+    }
+
+    /* ## Coloured side menu undersider ## */
+    .viT {
+        display: grid;
+        grid-template-columns: 21% 79%;
+    }
+
+    .viT .colourMenu {
+        display: block;
+        grid-area: 1 / 1 / span 4;
+        padding-top: 1rem;
+    }
+
+    .viT .colourMenu h3 {
+        margin: 0;
+        text-align: center;
+        color: #FFF;
+        margin-bottom: -0.5rem;
+    }
+
+    .viT .colourMenu ul {
+        padding: 0 1rem;
+    }
+
+    .viT .colourMenu ul li {
+        list-style: none;
+        margin-top: 1rem;
+        border: 2px solid #FFF;
+        padding: 0.2rem 0.2rem 0.2rem 1rem;
+    }
+
+    .viT .colourMenu ul li:hover {
+        animation: 0.4s ease;
+        background-color: #FFF;
+    }
+
+    .viT .colourMenu.blue ul li:hover {
+        color: #537CBC;
+    }
+
+    .viT .colourMenu.green ul li:hover {
+        color: #65B230;
+    }
+
+    .viT .colourMenu.orange ul li:hover {
+        color: #F3984C;
+    }
+
+    .viT .colourMenu.red ul li:hover {
+        color: #E42625;
+    }
+
+    .viT .colourMenu ul a {
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    .viT .blue {
+        background-color: #537CBC;
+    }
+
+    .viT .green {
+        background-color: #65B230;
+    }
+
+    .viT .orange {
+        background-color: #F3984C;
+    }
+
+    .viT .red {
+        background-color: #E42625;
+    }
+
+    .viT #forskningogudvikling {
+        padding: 0;
+        margin: 0;
+    }
+
+    .viT .colourMenu ul #bCB {
+        color: #537CBC;
+    }
+
+    .viT .colourMenu ul #bCR {
+        color: #E42625;
+    }
+
+    .viT .colourMenu ul #bCB li {
+        background-color: #FFF;
+    }
+
+    .viT .colourMenu ul #bCR li {
+        background-color: #FFF;
+    }
+
+    .viT #faglighed p, .viT #muligheder p, .viT #forskningogudvikling p, .viT #forskningogudvikling ul, .viT #omos p, .viT #missionogvision {
+        margin: 0 12rem 1rem;
+    }
+
+    .viT #muligheder img, .viT #forskningogudvikling article img {
+        width: 68%;
+        margin: 3rem auto;
+        display: block;
+    }
+
+    .viT #medarbejdere article {
+        display: grid;
+        grid-template-columns: 40% 50%;
+        width: 60%;
+        margin-bottom: 3rem;
+    }
+
+    .viT #medarbejdere article p {
+        margin: auto 0;
+    }
+
+    /* --- Vi tilbyder undersider --- */
+    .centerPage {
+        text-align: center;
+    }
+
+    .watch {
+        width: 72px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+
+
+    .collcenter {
+        margin-left:5vw;
+        margin-right:5vw;
+    }
+
+    .collcenter2 {
+        margin-left:15vw;
+        margin-right:15vw;
+    }
+
+    .collapsible {
+        background-color: #537CBC;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        margin: 6px;
+        width: 100%;
+        text-align: left;
+        outline: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 22px;
+        border: 1px solid #537CBC;
+    }
+
+    .active, .collapsible:hover {
+        background-color: #FFF;
+        color: #537CBC;
+    }
+
+    .collapsible:after {
+        content: '\F077';
+        color: white;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+
+    }
+
+    .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #FFF;
+    }
+
+    .viT #kontakt #kInfo {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        margin-left: 18%;
+        margin-top: 5rem;
+    }
+
+    .viT #kontakt #kMap {
+        padding: 0 8rem 8rem;
     }
 }
